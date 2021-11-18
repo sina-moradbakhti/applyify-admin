@@ -1,0 +1,21 @@
+<div style="padding: 20px">
+  <h1>
+    Counter:
+    <div *ngIf="appState$ | async as appState" >{{ appState.count }}</div>
+  </h1>
+
+  <button (click)="increment()">Increment</button>
+  <button (click)="decrement()">Decrement</button>
+  <button (click)="reset()">Reset</button>
+</div>
+
+<div style="padding: 20px">
+  <h1>
+    Counter 2:
+    <div *ngIf="appState$ | async as appState" >{{ appState.count2 }}</div>
+  </h1>
+
+  <button (click)="increment(2)">Increment</button>
+  <button (click)="decrement(2)">Decrement</button>
+  <button (click)="reset(2)">Reset</button>
+</div>

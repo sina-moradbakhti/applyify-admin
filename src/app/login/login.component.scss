@@ -1,0 +1,15 @@
+.example-container {
+    mat-divider {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    background: white;
+    padding: 30px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 100px auto;
+    width: 300px;
+    .form-field {
+        display: block
+    }
+}
